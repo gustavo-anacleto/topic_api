@@ -3,9 +3,9 @@ spring:
     name: api_kotlin
 
   datasource:
-    url: ${DB_URL:jdbc:postgresql://db-topics.cen8aqaimum6.us-east-1.rds.amazonaws.com:5432/api_kotlin}
-    username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:Muzambinho-13}
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -21,7 +21,3 @@ spring:
   flyway:
     schemas: [public, topic_api]
     create-schema: true
-
-#jdbc:postgresql://db-topics.cen8aqaimum6.us-east-1.rds.amazonaws.com:5432/api_kotlin
-#postgres
-#Muzambinho-13
